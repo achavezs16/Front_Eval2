@@ -1,0 +1,9 @@
+services:
+  frontend:
+    image: achavezs16/frontend-eval2:latest
+    container_name: frontend-eval2
+    restart: always
+    ports:
+      - "80:5000"
+    env_file:
+      - .env
